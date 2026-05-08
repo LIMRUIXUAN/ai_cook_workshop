@@ -9,6 +9,7 @@ export default {
       colors: {
         primary: "#adc6ff",
         "on-primary": "#002e69",
+        "on-surface": "#e5e2e1",
         surface: "#131313",
         background: "#0e0e0e",
       },

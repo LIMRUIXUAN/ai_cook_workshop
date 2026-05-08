@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom';
+import { motion } from 'framer-motion';
 import { ArrowRight, Play, CheckCircle2, TrendingUp, Shield, Smartphone } from 'lucide-react';
 import { useAuth } from '../context/AuthContext';
 
