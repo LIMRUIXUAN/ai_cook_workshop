@@ -1,9 +1,8 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
-import { motion } from 'framer-motion';
 import { ArrowRight, Play, CheckCircle2, TrendingUp, Shield, Smartphone } from 'lucide-react';
+import { useAuth } from '../context/AuthContext';
 
-const Landing = ({ user }) => {
+const Landing = () => {
+  const { currentUser: user } = useAuth();
   return (
     <div className="min-h-screen bg-[#0e0e0e] text-white overflow-hidden">
       {/* Navbar */}

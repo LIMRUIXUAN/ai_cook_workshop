@@ -16,8 +16,10 @@ import {
   Clock,
   Zap
 } from 'lucide-react';
+import { useAuth } from '../context/AuthContext';
 
-const Dashboard = ({ user }) => {
+const Dashboard = () => {
+  const { currentUser: user } = useAuth();
   const handleLogout = () => signOut(auth);
 
   const stats = [
