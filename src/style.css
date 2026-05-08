@@ -1,21 +1,22 @@
 @import "tailwindcss";
-@import "tailwindcss/theme" layer(theme);
-@import "tailwindcss/utilities" layer(utilities);
+@config "../tailwind.config.js";
 
-:root {
-  color-scheme: dark;
+@layer base {
+  :root {
+    color-scheme: dark;
+  }
+  
+  body {
+    @apply bg-[#0e0e0e] text-white antialiased;
+    margin: 0;
+  }
 }
 
-body {
-  margin: 0;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-.glass-panel {
-  background: rgba(255, 255, 255, 0.03);
-  backdrop-filter: blur(24px);
-  -webkit-backdrop-filter: blur(24px);
+@layer components {
+  .glass-panel {
+    @apply bg-white/5 backdrop-blur-3xl;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+  }
 }
 
 @keyframes spin-slow {
