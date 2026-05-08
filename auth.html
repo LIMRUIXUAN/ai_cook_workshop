@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>GYM FIT - Sign In</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<style>
+        @import url('https://fonts.googleapis.com/css2?family=Metropolis:wght@400;500;600;700;800;900&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600&display=swap');
+
+        body {
+            background-color: #131313;
+            color: #e5e2e1;
+            margin: 0;
+            font-family: 'Metropolis', sans-serif;
+        }
+
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "surface-container-high": "#2a2a2a",
+                        "on-tertiary": "#273500",
+                        "tertiary-container": "#799d00",
+                        "secondary-fixed": "#ffdcbf",
+                        "on-secondary-container": "#633700",
+                        "surface-dim": "#131313",
+                        "secondary": "#ffbc7c",
+                        "on-error-container": "#ffdad6",
+                        "inverse-on-surface": "#313030",
+                        "primary-container": "#4b8eff",
+                        "surface-bright": "#393939",
+                        "inverse-surface": "#e5e2e1",
+                        "surface-tint": "#adc6ff",
+                        "outline": "#8b90a0",
+                        "on-tertiary-fixed": "#151f00",
+                        "surface-container-lowest": "#0e0e0e",
+                        "surface-container": "#20201f",
+                        "primary-fixed": "#d8e2ff",
+                        "on-primary": "#002e69",
+                        "tertiary-fixed": "#c8f258",
+                        "tertiary-fixed-dim": "#acd53e",
+                        "inverse-primary": "#005bc1",
+                        "on-background": "#e5e2e1",
+                        "outline-variant": "#414755",
+                        "surface-variant": "#353535",
+                        "error": "#ffb4ab",
+                        "surface-container-highest": "#353535",
+                        "surface": "#131313",
+                        "on-tertiary-fixed-variant": "#3a4d00",
+                        "primary-fixed-dim": "#adc6ff",
+                        "on-surface-variant": "#c1c6d7",
+                        "surface-container-low": "#1c1b1b",
+                        "on-primary-container": "#00285c",
+                        "secondary-container": "#fe9400",
+                        "on-secondary-fixed": "#2d1600",
+                        "on-tertiary-container": "#212e00",
+                        "on-primary-fixed": "#001a41",
+                        "on-surface": "#e5e2e1",
+                        "background": "#131313",
+                        "error-container": "#93000a",
+                        "secondary-fixed-dim": "#ffb874",
+                        "on-secondary-fixed-variant": "#6a3b00",
+                        "on-primary-fixed-variant": "#004493",
+                        "on-error": "#690005",
+                        "tertiary": "#acd53e",
+                        "on-secondary": "#4b2800",
+                        "primary": "#adc6ff"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "spacing": {
+                        "section-padding": "40px",
+                        "sidebar-width": "280px",
+                        "container-max": "1440px",
+                        "base-unit": "8px",
+                        "widget-gutter": "24px"
+                    },
+                    "fontFamily": {
+                        "headline-md": ["Metropolis"],
+                        "body-md": ["Metropolis"],
+                        "display-xl": ["Metropolis"],
+                        "data-mono": ["Geist"],
+                        "headline-lg": ["Metropolis"],
+                        "label-sm": ["Geist"],
+                        "body-lg": ["Metropolis"]
+                    },
+                    "fontSize": {
+                        "headline-md": ["24px", {"lineHeight": "1.3", "fontWeight": "600"}],
+                        "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                        "display-xl": ["48px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "800"}],
+                        "data-mono": ["14px", {"lineHeight": "1.0", "letterSpacing": "0.05em", "fontWeight": "500"}],
+                        "headline-lg": ["32px", {"lineHeight": "1.2", "fontWeight": "700"}],
+                        "label-sm": ["12px", {"lineHeight": "1.0", "fontWeight": "600"}],
+                        "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}]
+                    }
+                },
+            },
+        }
+    </script>
+</head>
+<body class="bg-background text-on-background min-h-screen flex flex-col overflow-x-hidden">
+<!-- TopAppBar (Supressed for Transactional Page but Brand Header Remains) -->
+<header class="fixed top-0 w-full z-50 flex justify-between items-center px-section-padding h-20 bg-surface dark:bg-surface border-b border-outline-variant">
+<a href="index.html" class="text-headline-md font-headline-md font-extrabold tracking-tighter text-primary dark:text-primary">
+            GYM FIT
+        </a>
+<div class="flex items-center gap-base-unit">
+<span class="font-label-sm text-label-sm text-on-surface-variant">New to Gym Fit?</span>
+<a class="font-label-sm text-label-sm text-primary font-bold hover:underline" href="register.html">Create Account</a>
+</div>
+</header>
+<main class="flex-grow flex items-center justify-center pt-20">
+<div class="w-full max-w-[1200px] grid grid-cols-1 lg:grid-cols-2 min-h-[600px] p-base-unit">
+<!-- Left Side: Visual/Context -->
+<div class="hidden lg:flex relative rounded-xl overflow-hidden group">
+<img alt="Performance Training" class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="A high-contrast cinematic shot of a modern, dark-themed fitness facility with professional equipment casting sharp shadows under blue and white neon lighting. The atmosphere is technically elite and minimalist, featuring clean lines and a focused, intense training mood. The color palette consists of deep blacks and graphite grays with striking vibrant blue accents that define the high-tech aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCn6Jd81OU86FkhIAi8WTHazV6fcjGkokz74CRiq7KmmbWdel2e3HQvypVxhWyvVHmy5aoPKlJoRdadSIITNTKit_TkKpkqRzlcNv3gu-ZuOTU-D4AoeiEOcMWutt772TNMTRrjE8b_OXr8QkuhAafVhXH1AVB1mJevRvaCBuKjDDO6F6O60RVYIXK4NIA4waw0Kz6rHthtJ77lT_pa72vstDo73uAQFxgOZY2dFk8IxFZFmDk3ZRB0DbbUDsswstbhCVe1ulWRX6w"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest via-surface-container-lowest/40 to-transparent"></div>
+<div class="absolute bottom-12 left-12 right-12">
+<div class="font-data-mono text-label-sm text-primary mb-4 tracking-[0.2em] uppercase">Technically Elite</div>
+<h1 class="font-display-xl text-display-xl text-on-surface mb-4">UNLOCK YOUR PEAK PERFORMANCE.</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-md">Precision analytics meets high-intensity training. Sign in to access your workout metrics and progress tracking.</p>
+</div>
+</div>
+<!-- Right Side: Sign In Form -->
+<div class="flex flex-col justify-center items-center lg:items-start lg:pl-20 px-6 py-12">
+<div class="w-full max-w-md">
+<div class="mb-10 text-center lg:text-left">
+<h2 class="font-headline-lg text-headline-lg text-on-surface mb-2">Welcome Back</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">Enter your credentials to access the dashboard.</p>
+</div>
+<form class="space-y-6" action="dashboard.html" method="GET">
+<!-- Email Field -->
+<div class="group">
+<label class="font-label-sm text-label-sm text-on-surface-variant mb-2 block tracking-wider uppercase" for="email">Email Address</label>
+<div class="relative">
+<input class="w-full bg-surface-container-low border-0 border-b-2 border-outline-variant focus:border-primary focus:ring-0 text-on-surface font-body-md py-4 px-0 transition-all placeholder:text-outline-variant/50" id="email" placeholder="athlete@gymfit.com" type="email"/>
+<span class="material-symbols-outlined absolute right-0 top-1/2 -translate-y-1/2 text-outline-variant group-focus-within:text-primary">mail</span>
+</div>
+</div>
+<!-- Password Field -->
+<div class="group">
+<div class="flex justify-between items-center mb-2">
+<label class="font-label-sm text-label-sm text-on-surface-variant tracking-wider uppercase" for="password">Password</label>
+<a class="font-label-sm text-label-sm text-primary hover:text-primary-container" href="#">Forgot Password?</a>
+</div>
+<div class="relative">
+<input class="w-full bg-surface-container-low border-0 border-b-2 border-outline-variant focus:border-primary focus:ring-0 text-on-surface font-body-md py-4 px-0 transition-all placeholder:text-outline-variant/50" id="password" placeholder="••••••••" type="password"/>
+<span class="material-symbols-outlined absolute right-0 top-1/2 -translate-y-1/2 text-outline-variant group-focus-within:text-primary">lock</span>
+</div>
+</div>
+<!-- Error Message (Hidden by default but styled for validation) -->
+<div class="hidden flex items-center gap-2 text-error bg-error-container/10 p-3 rounded-lg border border-error-container/20">
+<span class="material-symbols-outlined text-[20px]">error</span>
+<p class="font-label-sm text-label-sm">Invalid email or password. Please try again.</p>
+</div>
+<!-- Submit Button -->
+<button class="w-full bg-[#007AFF] hover:bg-[#4b8eff] text-white font-headline-md text-body-md py-5 rounded-full flex justify-center items-center gap-3 transition-all active:scale-95 shadow-[0_0_20px_rgba(0,122,255,0.2)]" type="submit">
+                            Sign In
+                            <span class="material-symbols-outlined">arrow_forward</span>
+</button>
+<!-- Social Sign In -->
+<div class="pt-8 border-t border-outline-variant mt-10">
+<p class="font-label-sm text-label-sm text-on-surface-variant text-center mb-6 uppercase tracking-[0.1em]">Or continue with</p>
+<div class="grid grid-cols-2 gap-4">
+<button class="flex items-center justify-center gap-3 py-3 rounded-xl border border-outline-variant hover:bg-surface-container-highest transition-colors font-label-sm text-label-sm" type="button">
+<img alt="Google" class="w-5 h-5" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBbwkrX6ah1ZCGUNuXxlJ4lr9VUrJrqsa4ERgvX-2332igsYi2V71vQuFmptozRTqWMZmB_BolOhnOIYRebBXlh8dWDWnafQc0Pq9roAI8uyRKmF1vp0owyyoAnL8cJ7gx0qMYuO2PEOzgjN-ZxsDePhsYXdiN1E3qjLmPMkiw8oFHLF5EGKxUvbxuqT2FGLZqcPq3lFMkAM1d51XuaQCch_hYSYGIHYFrOT2QBXNPaIqZol9qoroYpJt8yCUvQ90mh9kyetI8J4KM"/>
+                                    Google
+                                </button>
+<button class="flex items-center justify-center gap-3 py-3 rounded-xl border border-outline-variant hover:bg-surface-container-highest transition-colors font-label-sm text-label-sm" type="button">
+<span class="material-symbols-outlined text-[20px]">ios</span>
+                                    Apple ID
+                                </button>
+</div>
+</div>
+</form>
+</div>
+</div>
+</div>
+</main>
+<!-- Footer (Simplified for Transactional Pages) -->
+<footer class="w-full py-8 px-section-padding flex flex-col md:flex-row justify-between items-center gap-base-unit bg-surface-container-lowest border-t border-outline-variant">
+<div class="font-headline-md text-label-sm text-on-surface-variant">
+            © 2024 GYM FIT TECHNICALLY ELITE. ALL RIGHTS RESERVED.
+        </div>
+<div class="flex gap-8">
+<a class="font-label-sm text-label-sm text-on-surface-variant hover:text-secondary transition-colors" href="#">Privacy Policy</a>
+<a class="font-label-sm text-label-sm text-on-surface-variant hover:text-secondary transition-colors" href="#">Terms of Service</a>
+<a class="font-label-sm text-label-sm text-on-surface-variant hover:text-secondary transition-colors" href="#">Contact Support</a>
+</div>
+</footer>
+
+    
+    
+<script type="module" src="./auth-login.js"></script>
+</body></html>
